@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Primeiros passos com o   Dom</title>
+     <style>
+        body{
+            background-color: aqua;
+            color: white;
+            font: normal 18pt arial;
+        }
+     </style>
+</head>
+<body>
+    <h1>Iniciando o <strong>DOM</strong> </h1>
+    <p>Aqui vai o resultado</p>
+    <div  class="msg">Click em mim</div>
+<p>Aprendendo a usar o <strong>DOM</strong> em javascript.</p>
+
+    <script>
+ /*
+//Isso vai fazer apenas que eu marque um paragráfo
+p1=document.getElementsByTagName('p')[1]
+document.write('Esta ecrito assimm'+p1.innerText)
+var d=window.document.getElementById('msg')
+d.style.background='pink'
+d.innerText='Estou amando javascript Manuel' //Originalmente esta click em min,mas eu alterei com dom e atualizando nomedaVariavel.innerText='AS Strings que desejo'
+
+window.document.getElementById('msg').innerText='ola'
+ */
+
+ var d= window.document.getElementsByClassName('msg')[0]
+ d.innerText='Bonito'
+ var d=window.document.querySelector('div.msg').style.background='red'
+    </script>
+</body>
+</html>
