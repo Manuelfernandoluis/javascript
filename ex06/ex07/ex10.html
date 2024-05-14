@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade </title>
+</head>
+<body>
+    <h2>Nacionalidade: </h2>
+    <input type="text" name="inacionalidade" id="nacionalidade" placeholder="Digite o seu país">
+    <input type="submit" value="enviar"  onclick="enviar()">
+<div class="res">resultado:</div>
+    <script>
+//Vamos criar uma função anónima 
+
+function enviar(){
+    var nacionalidade=window.document.querySelector('#nacionalidade')
+    nacionalidade.toString()
+    var res=window.document.querySelector('.res')
+
+    //Vamos fazer as condições que são if e else
+    if(nacionalidade=='Angola'){
+          res.innerHTML='Você é Angolano'
+    }else{
+         res.innerHTML='Você é estrangeiro, por favor procure o seu país caso ao contrario você será preso'
+    }
+}
+    </script>
+    
+</body>
+</html>

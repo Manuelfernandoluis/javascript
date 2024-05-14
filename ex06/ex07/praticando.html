@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Eventos</title>
+
+    <style>
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        #caixa{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+             justify-content: center;
+            font: 20pt Arial;
+            align-items: center;
+            display: flex;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.435);
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Vamos aperfeiçoar os eventos em javascript-->
+
+    <!--Para começar podemos colocar eventos na tag html-->
+
+     <!-- Como inlustra a figura abaixo, acabamos de declara um evento na tag html-->
+    <div id="caixa" >
+        Eventos 
+    </div>
+
+<script>
+  var caixa=window.document.getElementById('caixa')
+  //Antes de trabalhar primeiro selecione, se a variavel estiver dentro de uma função ela apenas será reconhecido internamente, para que se torene comum é preciso fazer com que ela seja global
+  caixa.addEventListener('click',clicou);
+  caixa.addEventListener('mouseout',saiudoEvento);
+  caixa.addEventListener('mousedown',bateuCaixa);
+  caixa.addEventListener('mouseenter', entrounoEvento);
+  //Quando você esta usando addEventListener os eventos não entra on, apenas o seu nome mas no addEventListener
+
+    //criação da função anónima
+    function clicou(){
+    
+        caixa.innerHTML='Clicou no evento'
+        caixa.style.background='pink'
+    }
+
+    function entrounoEvento(){
+       
+        caixa.innerText='entrounoEvento'
+        caixa.style.background='green'
+    }
+
+    function saiudoEvento(){
+        
+        caixa.innerText='saiudoEvento'
+        caixa.style.background='red'
+    }
+
+    //Ele é representado por onmousedown que faz com que aperte o elemento não largue ele vai acionar o que você deseja
+  function   bateuCaixa(){
+   
+
+    caixa.innerHTML='Apertou na caixa'
+    caixa.style.background='yellow'
+  }
+
+  //Para a primoração do mesmo usamos addEventListener, tem a função de prestar atenção num determinado elemento
+</script>
+</body>
+</html>

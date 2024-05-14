@@ -1,0 +1,53 @@
+nnnnnnnnnn~  py
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Somando números</title>
+<style>
+    body{
+        font: normal 18pt arial ;
+    }
+
+    /*Aumentamos o tamanho do input */
+    input{
+        font: normal 18pt arial;
+          width: 100px;
+    }
+    div#res{
+        margin-top: 20px; 
+    }
+</style>
+
+</head>
+<body>
+        <h1>Somando valores </h1>
+    <input type="number" name="txtn1" id="txtn1">+
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+<div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1'); //Os dois funcionam perfeitamente
+            var tn2=window.document.querySelector('input#txtn2');
+var res=window.document.getElementById('res')
+            //Nós vamos precisar uma variavel para n1 e para n2 isso porque quando ele vem de uma caixa de texto ele é considerado texto
+            var n1 =Number.parseInt(tn1.value)
+            var n2=Number.parseInt(tn2.value)
+            var s=n1+n2
+
+            //Atualiamos colocando o valor de s
+            res.innerHTML=`A soma entre ${n1} e ${n2} é igual a  <strong>${s}<strong>`
+        }
+
+    </script>
+</body>
+</html>
