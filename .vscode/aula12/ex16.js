@@ -15,3 +15,4 @@ switch(meteorologia){
                                 break*/
 
 }//O switch case aqui não funciona porque esse exercicio não apresenta valores fixos.
+
