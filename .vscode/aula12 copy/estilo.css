@@ -1,13 +1,19 @@
 body{
     background-color: rgba(0, 204, 255, 0.877);
+     
 }
     section{
           margin-top: 50%;
         margin: auto;
         width: 450px;
-        height: 100px;
+        height: 150px;
         box-shadow: 5px 5px 10px black;
         border-radius: 20px;
-        
+        padding: 5px;
        justify-content: center;
+       overflow: hidden;
+       background-color: white;
+    }
+    h1{
+        color: white;
     }
