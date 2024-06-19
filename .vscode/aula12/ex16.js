@@ -15,4 +15,6 @@ switch(meteorologia){
                                 break*/
 
 }//O switch case aqui não funciona porque esse exercicio não apresenta valores fixos.
-
+var img=document.createElement('img')//O elemento vai ser img, vai criar uma tag  img para min
+   img.setAttribute('id','foto')
+   

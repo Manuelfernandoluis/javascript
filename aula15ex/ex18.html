@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="ex18.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Número : <input type="number" name="num" id="txtn">
+            <input type="button" value="gerar tabuada" onclick="tabuada()"></p>
+        </div>
+
+        <div>
+            <!--Coloquei tamanho 10 porque a tabuada vai ter 10 elementos -->
+            <select name="tabuada" id="tab" size="10">
+                <!--Vamos criar option de forma dinâmica-->
+                <option value="">Digite o número acima</option>
+            </select>
+        </div>
+    </section>
+
+<footer>&copy;Manuel Luís</footer>
+
+
+
+
+
+
+    <script src="ex18.js">
+
+    </script>
+</body>
+</html>
